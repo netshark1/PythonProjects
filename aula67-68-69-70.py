@@ -62,13 +62,15 @@ btncb=Button(app,text='imprime esporte',command=ImprimeEsporte).place(x=10,y=395
 #nao faz parte da subbiblioteca ttk
 
 def valorEscala():
-    print('o valor da escala é: '+ str(esca.get()))
+    #print('o valor da escala é: '+ str(esca.get()))
+    print()
 
 #esca=StringVar()
 lbValor=Label(app,text='Valor do Scale').place(x=10,y=435)
-esca=Scale(app,from_=0,to=50,orient=HORIZONTAL).place(x=10,y=455)
-esca.set(25)
+esca=Scale(app,from_=0,to=100,orient=HORIZONTAL).place(x=10,y=455)
 btnValor=Button(app,text='imprima o valor da escala',command=valorEscala).place(x=10,y=495)
 
+#labelFrame
+lf=LabelFrame(app,text='carros',borderwidth=1,relief='solid').place(x=10,y=475)
 
 app.mainloop()
